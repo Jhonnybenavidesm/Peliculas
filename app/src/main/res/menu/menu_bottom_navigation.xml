@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/id_menubn_pelicula"
+        android:title="Pelicula"
+        android:icon="@drawable/peliculassss"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/id_menubn_genero"
+        android:title="generos"
+        android:icon="@drawable/carpeta2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/id_menubn_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/id_menubn_trailer"
+        android:title="trailer"
+        android:icon="@drawable/trailer"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/id_menubn_sinopsis"
+        android:title="sinopsis"
+        android:icon="@drawable/agenda"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

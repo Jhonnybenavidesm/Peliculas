@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_vp_trailer" type="id" />
+    <item name="id_img_video" type="id" />
+</resources>
