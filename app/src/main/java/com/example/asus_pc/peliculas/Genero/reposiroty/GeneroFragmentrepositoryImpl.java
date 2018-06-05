@@ -23,16 +23,17 @@ public class GeneroFragmentrepositoryImpl implements GeneroFragmentrepository {
     public GeneroFragmentrepositoryImpl(GeneroFragmentInterator generoFragmentInteractor) {
         this.generoFragmentInteractor = generoFragmentInteractor;
     }
+
     @Override
     public void getDataGenero() {
         RestApiAdapter restApiAdapter = new RestApiAdapter();
         Service service = restApiAdapter.getClientService();
-        Call<List<Genero>> generos = service.getDataGenero();
-        generos.enqueue(new Callback<List<Genero>>() {
+        Call<List<Genero>> genero = service.getDataGenero();
+        genero.enqueue(new Callback<List<Genero>>() {
             @Override
             public void onResponse(Call<List<Genero>> call, Response<List<Genero>> response) {
                 generoList = response.body();
-                generoFragmentInteractor.showResultGeneros(generoList);
+                generoFragmentInteractor.showResultGenero(generoList);
             }
 
             @Override

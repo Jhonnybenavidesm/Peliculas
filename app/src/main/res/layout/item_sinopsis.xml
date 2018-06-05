@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
         <ImageView
             android:id="@+id/id_img_sinopsis"
+            android:background="@drawable/cartelera"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"/>
@@ -29,40 +30,15 @@
                 android:id="@+id/id_txv_sinopis_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre del estadio"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:layout_weight="1"
                 android:layout_gravity="center"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:button="@drawable/checkbox_selector"/>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:button="@drawable/checkbox_selector"/>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:button="@drawable/checkbox_selector"/>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_selector"/>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_selector"/>
-            </LinearLayout>
+                android:textColor="@android:color/white"
+                android:text="Es una obra de arte cinematográfica, la cual ... que van desde las de menvariedador resolución, como las incluidas en los teléfonos móviles, hasta las de alta definición (HD)"/>
         </LinearLayout>
     </RelativeLayout>
 

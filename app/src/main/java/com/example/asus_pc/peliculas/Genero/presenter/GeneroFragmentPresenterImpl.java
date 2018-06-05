@@ -16,17 +16,17 @@ public class GeneroFragmentPresenterImpl implements GeneroFragmentPresenter {
     private GeneroFragmentView generoFragmentView;
     private GeneroFragmentInterator generoFragmentInteractor;
 
-    public GeneroFragmentPresenterImpl(GeneroFragmentView groupFragmentView) {
+    public GeneroFragmentPresenterImpl(GeneroFragmentView generoFragmentView) {
         this.generoFragmentView = generoFragmentView;
         generoFragmentInteractor = new GeneroFragmentInteratorImpl(this);
     }
     @Override
-    public void showResultGeneros(List<Genero> peliculaList) {
-        generoFragmentInteractor.showResultGeneros(peliculaList);
+    public void showResultGenero(List<Genero> generoList) {
+        generoFragmentView.showResultGenero(generoList);
     }
 
     @Override
-    public void getDataGeneros() {
+    public void getDataGenero() {
         generoFragmentInteractor.getDataGenero();
     }
 }

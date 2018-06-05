@@ -23,7 +23,7 @@ public class PeliculaFragmentPresenterImpl implements PeliculaFragmentPresenter{
 
     @Override
     public void showResultPelicula(List<Pelicula> peliculasList) {
-        peliculaFragmentInteractor.showResultPelicula(peliculasList);
+        peliculaFragmentView.showResultPelicula(peliculasList);
     }
 
     @Override

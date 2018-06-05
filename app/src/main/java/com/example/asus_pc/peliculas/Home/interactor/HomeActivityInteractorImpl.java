@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import com.example.asus_pc.peliculas.Genero.view.GeneroFragment;
 import com.example.asus_pc.peliculas.Home.presenter.HomeActivityPresenter;
 import com.example.asus_pc.peliculas.Pelicula.view.PeliculaFragment;
+import com.example.asus_pc.peliculas.Perfil.view.PerfilFragment;
 import com.example.asus_pc.peliculas.R;
 import com.example.asus_pc.peliculas.Sinopsis.view.SInopsisFragment;
 import com.example.asus_pc.peliculas.Trailer.view.TrailerFragment;
@@ -44,7 +45,18 @@ public class HomeActivityInteractorImpl implements HomeActivityInteractor {
                         .addToBackStack(null)
                         .commit();
                 break;
+
             case 2:
+                PerfilFragment perfilFragment = new PerfilFragment();
+                fragmentManager
+                        .beginTransaction()
+                        .replace(R.id.id_fl_index, perfilFragment)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                        .addToBackStack(null)
+                        .commit();
+                break;
+
+            case 3:
                 TrailerFragment trailerFragment = new TrailerFragment();
                 fragmentManager
                         .beginTransaction()
@@ -54,7 +66,7 @@ public class HomeActivityInteractorImpl implements HomeActivityInteractor {
                         .commit();
                 break;
 
-            case 3:
+            case 4:
                 SInopsisFragment SInopsisFragment = new SInopsisFragment();
                 fragmentManager
                         .beginTransaction()
@@ -63,6 +75,8 @@ public class HomeActivityInteractorImpl implements HomeActivityInteractor {
                         .addToBackStack(null)
                         .commit();
                 break;
+
+
         }
 
     }

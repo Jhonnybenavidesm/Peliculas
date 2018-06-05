@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.asus_pc.peliculas.CrearPerfil.view.CreateAccountActivity;
 import com.example.asus_pc.peliculas.Home.view.HomeActivity;
 import com.example.asus_pc.peliculas.Login.model.Login;
 import com.example.asus_pc.peliculas.Login.presenter.LoginActivityPresenter;
@@ -38,7 +39,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     }
     @Override
     public void showResult(List<Login> loginList) {
-        sharedPreferences = getSharedPreferences("PreferencesWorldCup", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("PreferencesPelicula", Context.MODE_PRIVATE);
 
         // Crear preferencias Clave - Valor
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -59,7 +60,7 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
     }
 
     public void onClickButtonCreateAccount(View view){
-       // Intent intent = new Intent(this, CreateAccountActivity.class);
-        //startActivity(intent);
+       Intent intent = new Intent(this, CreateAccountActivity.class);
+        startActivity(intent);
     }
 }

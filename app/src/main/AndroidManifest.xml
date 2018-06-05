@@ -19,7 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login.view.LoginActivity"></activity>
+        <activity android:name=".Login.view.LoginActivity" />
+        <activity android:name=".CrearCuenta.view.CreateAccountActivity" />
+        <activity android:name=".CreateCount.view.CreateAccountActivity" />
+        <activity android:name=".CrearPerfil.view.CreateAccountActivity"></activity>
     </application>
 
 </manifest>

@@ -40,14 +40,14 @@ public class GeneroFragment extends Fragment implements GeneroFragmentView{
         generoFragmentPresenter = new GeneroFragmentPresenterImpl(this);
 
         progressBarGroup.setVisibility(View.VISIBLE);
-        generoFragmentPresenter.getDataGeneros();
+        generoFragmentPresenter.getDataGenero();
 
         return view;
     }
 
     @Override
-    public void showResultGeneros(List<Genero> peliculaList) {
+    public void showResultGenero(List<Genero> generoList) {
         progressBarGroup.setVisibility(View.GONE);
-        recyclerViewGroup.setAdapter(new GeneroAdapter(peliculaList, getContext()));
+        recyclerViewGroup.setAdapter(new GeneroAdapter(generoList, getContext()));
     }
 }

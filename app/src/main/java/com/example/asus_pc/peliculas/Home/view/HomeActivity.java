@@ -38,8 +38,8 @@ public class HomeActivity extends AppCompatActivity implements HomeActivityView{
     }
 
     private void initSharedPreferences() {
-        // Inicializar coleccion de preferencias llamada mis "PreferencesWorldCup"
-        sharedPreferences = getSharedPreferences("PreferencesWorldCup", Context.MODE_PRIVATE);
+
+        sharedPreferences = getSharedPreferences("PreferencesPelicula", Context.MODE_PRIVATE);
 
         String user = sharedPreferences.getString("user", null);
 
@@ -65,12 +65,17 @@ public class HomeActivity extends AppCompatActivity implements HomeActivityView{
                     case R.id.id_menubn_genero:
                         homeActivityPresenter.ChangeTab(1, fragmentManager);
                         break;
-                    case R.id.id_menubn_trailer:
+                    case R.id.id_menubn_prerfil:
                         homeActivityPresenter.ChangeTab(2, fragmentManager);
                         break;
-                    case R.id.id_menubn_sinopsis:
+                    case R.id.id_menubn_trailer:
                         homeActivityPresenter.ChangeTab(3, fragmentManager);
                         break;
+                    case R.id.id_menubn_sinopsis:
+                        homeActivityPresenter.ChangeTab(4, fragmentManager);
+                        break;
+
+
 
                 }
 

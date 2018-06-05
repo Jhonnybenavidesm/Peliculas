@@ -10,5 +10,8 @@ import java.util.List;
 
 public interface GeneroFragmentInterator {
     void getDataGenero();
-    void showResultGeneros(List<Genero> peliculaList);
+    void showResultGenero(List<Genero> generoList);
+
+
+
 }

@@ -4,4 +4,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="str_title_video">str_title_video</string>
+    <string name="str_account_email">email</string>
+    <string name="str_account_name">name</string>
+    <string name="str_account_user">user</string>
+    <string name="str_account_password">password</string>
+    <string name="str_account_repassword">password</string>
+    <string name="str_btn_account">acount</string>
+    <string name="str_toolbar_account">acoount</string>
 </resources>

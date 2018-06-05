@@ -9,5 +9,5 @@ import java.util.List;
  */
 
 public interface GeneroFragmentView {
-    void showResultGeneros(List<Genero> peliculaList);
+    void showResultGenero(List<Genero> peliculaList);
 }

@@ -20,13 +20,15 @@ public class GeneroFragmentInteratorImpl implements GeneroFragmentInterator {
         generoFragmentRepository = new GeneroFragmentrepositoryImpl(this);
     }
 
+
+
     @Override
     public void getDataGenero() {
         generoFragmentRepository.getDataGenero();
     }
 
     @Override
-    public void showResultGeneros(List<Genero> peliculaList) {
-        generoFragmentPresenter.showResultGeneros(peliculaList);
+    public void showResultGenero(List<Genero> generoList) {
+        generoFragmentPresenter.showResultGenero(generoList);
     }
 }

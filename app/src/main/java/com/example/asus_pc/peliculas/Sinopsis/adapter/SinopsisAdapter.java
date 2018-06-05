@@ -41,6 +41,7 @@ public class SinopsisAdapter extends RecyclerView.Adapter {
         Sinopsis object = sinopsisList.get(position);
         ViewHolderSinopsis viewHolderSinopsis = (ViewHolderSinopsis) holder;
         viewHolderSinopsis.textViewSinopsisName.setText(object.getName());
+
         Picasso.get().load(object.getUrl_img()).into(viewHolderSinopsis.imageViewSinopsisImg);
     }
 
@@ -50,6 +51,7 @@ public class SinopsisAdapter extends RecyclerView.Adapter {
     }
 
     public class ViewHolderSinopsis extends RecyclerView.ViewHolder {
+
         TextView textViewSinopsisName;
         ImageView imageViewSinopsisImg;
 

@@ -19,7 +19,7 @@ public class PeliculaFragmentRepositoryImpl  implements PeliculaFragmentReposito
     private PeliculaFragmentInteractor peliculaFragmentInteractor;
     List<Pelicula> peliculaList;
 
-    public PeliculaFragmentRepositoryImpl(PeliculaFragmentInteractor peliculaFragmentInteractor1) {
+    public PeliculaFragmentRepositoryImpl(PeliculaFragmentInteractor peliculaFragmentInteractor) {
         this.peliculaFragmentInteractor = peliculaFragmentInteractor;
     }
 

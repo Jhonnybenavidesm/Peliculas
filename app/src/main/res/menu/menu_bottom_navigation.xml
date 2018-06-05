@@ -15,8 +15,9 @@
         android:icon="@drawable/carpeta2"
         app:showAsAction="ifRoom"/>
 
+
     <item
-        android:id="@+id/id_menubn_perfil"
+        android:id="@+id/id_menubn_prerfil"
         android:title="Perfil"
         android:icon="@drawable/home"
         app:showAsAction="ifRoom"/>

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.asus_pc.peliculas.Genero.model.Genero;
+import com.example.asus_pc.peliculas.Pelicula.model.Pelicula;
 import com.example.asus_pc.peliculas.R;
 import com.squareup.picasso.Picasso;
 
@@ -25,10 +26,12 @@ public class GeneroAdapter extends RecyclerView.Adapter {
     List<Genero> generoList;
     Context context;
 
-    public GeneroAdapter(List<Genero> generosList, Context context) {
+    public GeneroAdapter(List<Genero> generoList, Context context) {
         this.generoList = generoList;
         this.context = context;
     }
+
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

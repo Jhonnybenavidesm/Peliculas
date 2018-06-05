@@ -4,7 +4,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_margin="9dp"
     android:background="@drawable/borde_genero">
+
     <TextView
         android:id="@+id/id_txv_genero_title"
         android:layout_width="match_parent"
@@ -13,10 +15,10 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#FFFFFF"
         android:background="#33BDBDBD"
         android:padding="8dp"
-        android:layout_margin="1dp"/>
+        android:layout_margin="1dp" />
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorPrimary"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,26 +28,27 @@
         android:paddingRight="24dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
-
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/id_img_genero_team1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:elevation="4dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher_round"
             android:scaleType="centerCrop"
-            android:background="@drawable/avengers_infinity_war"
+            android:elevation="4dp"
+            app:civ_border_width="0.5dp"
             app:civ_border_color="@color/colorPrimaryDark"
-            app:civ_border_width="0.5dp" />
+            android:layout_gravity="center"/>
         <TextView
             android:id="@+id/id_txv_genero_teamname1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Avengers Infinity War"
+            android:text="Pelicula"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:layout_marginLeft="16dp"/>
+
     </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorPrimary"/>
     <LinearLayout
@@ -58,9 +61,9 @@
         android:paddingBottom="8dp">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/id_img_genero_team2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/deadpool2jpg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher_round"
             android:scaleType="centerCrop"
             android:elevation="4dp"
             app:civ_border_width="0.5dp"
@@ -70,11 +73,12 @@
             android:id="@+id/id_txv_genero_teamname2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deadpool2"
+            android:text="Pelicula"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginLeft="16dp"/>
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorPrimary"/>
@@ -88,9 +92,9 @@
         android:paddingBottom="8dp">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/id_img_genero_team3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/deadpool2jpg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher_round"
             android:scaleType="centerCrop"
             android:elevation="4dp"
             app:civ_border_width="0.5dp"
@@ -100,11 +104,12 @@
             android:id="@+id/id_txv_genero_teamname3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rusia"
+            android:text="Pelicula"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginLeft="16dp"/>
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorPrimary"/>
@@ -118,9 +123,9 @@
         android:paddingBottom="8dp">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/id_img_genero_team4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-           android:background="@drawable/avengers_infinity_war"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher_round"
             android:scaleType="centerCrop"
             android:elevation="4dp"
             app:civ_border_width="0.5dp"
@@ -130,13 +135,12 @@
             android:id="@+id/id_txv_genero_teamname4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rusia"
+            android:text="Pelicula"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginLeft="16dp"/>
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
-
-
 </LinearLayout>

@@ -6,7 +6,7 @@
             <solid android:color="#212121"/>
             <!-- tamaño y color del shape -->
             <stroke
-                android:color="@color/colorPrimary"
+                android:color="#212121"
                 android:width="1dp"/>
             <!-- tamaño de las esquinas redondeadas -->
             <corners android:radius="0dp"/>

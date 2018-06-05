@@ -23,7 +23,7 @@ public class SinopsisFragmentPresenterImpl implements SinopsisFragmentPresenter 
 
     @Override
     public void showResultSinopsis(List<Sinopsis> sinopsisList) {
-        sinopsisFragmentInteractor.showResultSinopsis(sinopsisList);
+        sinopsisFragmentView.showResultSinopsis(sinopsisList);
     }
 
     @Override
