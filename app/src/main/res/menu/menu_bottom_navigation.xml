@@ -12,20 +12,20 @@
     <item
         android:id="@+id/id_menubn_genero"
         android:title="generos"
-        android:icon="@drawable/carpeta2"
+        android:icon="@drawable/agenda"
         app:showAsAction="ifRoom"/>
 
 
     <item
         android:id="@+id/id_menubn_prerfil"
         android:title="Perfil"
-        android:icon="@drawable/home"
+        android:icon="@drawable/perfil"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/id_menubn_trailer"
         android:title="trailer"
-        android:icon="@drawable/trailer"
+        android:icon="@drawable/peliculassss"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/id_menubn_sinopsis"
